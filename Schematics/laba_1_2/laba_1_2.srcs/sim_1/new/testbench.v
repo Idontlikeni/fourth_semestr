@@ -28,5 +28,4 @@ module testbench();
         
     mili M1(.clk(clk), .a(a), .b(b), .c(c), .state(mili_state), .d(mili_out));
     moore M2(.clk(clk), .a(a), .b(b), .c(c), .state(moore_state), .d(moore_out));
-    //Moore M2(.a(a), .b(b), .c(c),.clk(clk), .d(moore_out));
 endmodule

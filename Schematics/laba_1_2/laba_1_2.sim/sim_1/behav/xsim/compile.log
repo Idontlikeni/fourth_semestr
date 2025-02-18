@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/laba_1_2/laba_1_2.srcs/sources_1/new/mili.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mili
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/laba_1_2/laba_1_2.srcs/sources_1/new/moore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/laba_1_2/laba_1_2.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
