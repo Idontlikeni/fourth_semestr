@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ПБД/Лекция 1 (20.02.2025).md",
+                "file": "Английский/Дз 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Лекция 1 (20.02.2025)"
+              "title": "Дз 1"
             }
           }
         ],
@@ -184,11 +184,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "21f9c4661b77c681",
+  "active": "1aa881fdd574a5c6",
   "lastOpenFiles": [
-    "Филосовия",
-    "Английский/Дз 1.md",
+    "Pasted image 20250220112519.png",
+    "Философия/Дз 1.md",
     "ПБД/Лекция 1 (20.02.2025).md",
+    "Философия",
+    "Английский/Дз 1.md",
     "ПБД",
     "Untitled.md",
     "Welcome.md",
