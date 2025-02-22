@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module main(
-    input signed a, b, c, d, e,
-    output signed [1:0] f
+   input [15:0] a, b, c, d, e,
+   output [31:0] f
     );
     assign f = a * b >> c/d + e;
 endmodule
