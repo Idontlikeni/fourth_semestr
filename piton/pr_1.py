@@ -1,7 +1,13 @@
-import math
+import math as m
 
 
-def main(x, y):
-    return math.sqrt(x ** 7 - 74 * y ** 6) - \
-           math.sqrt(((68 * y + y*y + 55 * x ** 3) ** 5) /
-                     (y**6/65 + 75*(69*x*x)**5))
+def main(b, n, a):
+    smbk = 0
+    for k in range(1, n + 1):
+        for j in range(1, b + 1):
+            smbk += 75 * (22 * k ** 2 - 51 - 69 * j) + m.ceil(k) ** 4
+    smab = 0
+    for j in range(1, a + 1):
+        for i in range(1, b + 1):
+            smab += (abs(j/19) ** 4 + 0.01 + 97*i**2)
+    return smbk - smab
