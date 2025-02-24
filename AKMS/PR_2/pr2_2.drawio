@@ -7,6 +7,9 @@
         <mxCell id="EHqorV340Nmj9FqR5h-e-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EHqorV340Nmj9FqR5h-e-1" target="EHqorV340Nmj9FqR5h-e-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="EHqorV340Nmj9FqR5h-e-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EHqorV340Nmj9FqR5h-e-1" target="EHqorV340Nmj9FqR5h-e-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="EHqorV340Nmj9FqR5h-e-1" value="Покупатель" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="140" y="420" width="30" height="60" as="geometry" />
         </mxCell>
@@ -33,7 +36,7 @@
           <mxGeometry x="95" y="180" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EHqorV340Nmj9FqR5h-e-8" value="Подтвердить свои данные" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="180" width="120" height="80" as="geometry" />
+          <mxGeometry x="250" y="180" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EHqorV340Nmj9FqR5h-e-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="EHqorV340Nmj9FqR5h-e-11" target="EHqorV340Nmj9FqR5h-e-13">
           <mxGeometry relative="1" as="geometry" />
@@ -52,13 +55,22 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="EHqorV340Nmj9FqR5h-e-11" value="Покупка товара" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="410" width="110" height="60" as="geometry" />
+          <mxGeometry x="250" y="420" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EHqorV340Nmj9FqR5h-e-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" edge="1" parent="1" source="EHqorV340Nmj9FqR5h-e-12" target="EHqorV340Nmj9FqR5h-e-21">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EHqorV340Nmj9FqR5h-e-12" value="Выбор товара" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="340" width="120" height="80" as="geometry" />
+          <mxGeometry x="400" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EHqorV340Nmj9FqR5h-e-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" edge="1" parent="1" source="EHqorV340Nmj9FqR5h-e-13" target="EHqorV340Nmj9FqR5h-e-21">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EHqorV340Nmj9FqR5h-e-13" value="Оплата товара" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="460" width="120" height="80" as="geometry" />
+          <mxGeometry x="400" y="470" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EHqorV340Nmj9FqR5h-e-21" value="Фармацевт" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="420" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
