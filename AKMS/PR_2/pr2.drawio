@@ -19,28 +19,38 @@
         <mxCell id="ez8BYG0pOaCcmM5glpmh-1" value="Клиент банка&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="150" y="240" width="30" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="ez8BYG0pOaCcmM5glpmh-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ez8BYG0pOaCcmM5glpmh-4" target="ez8BYG0pOaCcmM5glpmh-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ez8BYG0pOaCcmM5glpmh-27" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ez8BYG0pOaCcmM5glpmh-25">
+          <mxGeometry x="0.1333" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ez8BYG0pOaCcmM5glpmh-4" value="Пополнить счет в банке" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="185" width="110" height="70" as="geometry" />
+          <mxGeometry x="380" y="190" width="110" height="70" as="geometry" />
         </mxCell>
         <mxCell id="ez8BYG0pOaCcmM5glpmh-9" value="Открыть счет" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="100" width="110" height="70" as="geometry" />
+          <mxGeometry x="380" y="90" width="110" height="70" as="geometry" />
         </mxCell>
         <mxCell id="ez8BYG0pOaCcmM5glpmh-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ez8BYG0pOaCcmM5glpmh-10" target="ez8BYG0pOaCcmM5glpmh-9">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="665" y="135" />
+              <mxPoint x="670" y="270" />
+              <mxPoint x="670" y="125" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="ez8BYG0pOaCcmM5glpmh-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ez8BYG0pOaCcmM5glpmh-10" target="ez8BYG0pOaCcmM5glpmh-13">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="665" y="420" />
+              <mxPoint x="670" y="270" />
+              <mxPoint x="670" y="420" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="ez8BYG0pOaCcmM5glpmh-10" value="&lt;div&gt;Операционист банка&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: transparent;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22shape%3DumlActor%3BverticalLabelPosition%3Dbottom%3BverticalAlign%3Dtop%3Bhtml%3D1%3BoutlineConnect%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22150%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="710" y="240" width="30" height="60" as="geometry" />
+          <mxGeometry x="720" y="240" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ez8BYG0pOaCcmM5glpmh-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ez8BYG0pOaCcmM5glpmh-12" target="ez8BYG0pOaCcmM5glpmh-4">
           <mxGeometry relative="1" as="geometry" />
@@ -54,8 +64,16 @@
         <mxCell id="ez8BYG0pOaCcmM5glpmh-13" value="Закрыть счет" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="385" width="110" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="ez8BYG0pOaCcmM5glpmh-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ez8BYG0pOaCcmM5glpmh-14" target="ez8BYG0pOaCcmM5glpmh-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ez8BYG0pOaCcmM5glpmh-28" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ez8BYG0pOaCcmM5glpmh-26">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ez8BYG0pOaCcmM5glpmh-14" value="снять деньги" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="295" width="110" height="70" as="geometry" />
+          <mxGeometry x="380" y="280" width="110" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
