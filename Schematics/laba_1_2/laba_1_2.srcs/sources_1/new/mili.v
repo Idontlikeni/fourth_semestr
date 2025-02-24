@@ -12,26 +12,26 @@ module mili(
     begin
         case (state)
             2'd0:begin
-                if(c)state <= 2'd1;
-                else if(~c)state <= 2'd3;
-                d <= a & b;
+                if(~c)state <= 2'd2;
+                else if(b && c)state <= 2'd3;
+                else if(~b && c)state <= 2'd0;
+                d <= ~(c & b);
             end
             2'd1:begin
-                if(a)state <= 2'd1;
-                else if(~a && ~c)state <= 2'd2;
-                else if(~a && c)state <= 2'd0;
+                if(c)state <= 2'd2;
+                else if(~b && ~c)state <= 2'd0;
+                else if(b && ~c)state <= 2'd1;
                 d = (~a & b) | (a & ~b);
             end
             2'd2:begin
-                if(~c)state <= 2'd3;
-                else if(c)state <= 2'd1;
-                d = (~a & c) | (a & ~c);
+                if(~b)state <= 2'd3;
+                else if(b)state <= 2'd1;
+                d = ~(a & c);
             end
             2'd3:begin
-                if(~c)state <= 2'd2;
-                else if(b && c)state <= 2'd0;
-                else if(~b && c)state <= 2'd3;
-                d = ~a | c;
+                if(a)state <= 2'd1;
+                else if(~a)state <= 2'd0;
+                d = b | c;
             end
         endcase
     end
