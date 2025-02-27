@@ -5,11 +5,22 @@ with open("input.txt", 'r', encoding='utf-8') as f:
     lines = f.readlines()
 print(lines)
 
-form = [1, 1]
+form = [1, 2]
 
-with open('output.csv', 'w', newline='', encoding='utf-8') as csvfile: # потом убрать энкодинг, а то в экселе не будет робить
+with open('output6.csv', 'w', newline='') as csvfile: # потом убрать энкодинг, а то в экселе не будет робить
     writer = csv.writer(csvfile, delimiter=';')
     for line in lines[1:]:
         arr = line.replace("\n", "").split()
 
-        writer.writerow([line[0], line[2:].replace("\n", "")])
+        res = []
+        
+        c = 0
+        for i in form:
+            temp = []
+            for j in range(i):
+                temp.append(arr[c])
+                c += 1
+            res.append(' '.join(temp))
+        print(res)
+        # print(arr)
+        writer.writerow(res)
