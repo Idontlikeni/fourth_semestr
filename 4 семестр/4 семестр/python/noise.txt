@@ -1,0 +1,47 @@
+import math
+import random
+import tkinter as tk
+
+
+def draw(shader, width, height):
+    image = bytearray((0, 0, 0) * width * height)
+    for y in range(height):
+        for x in range(width):
+            pos = (width * y + x) * 3
+            color = shader(x / width, y / height)
+            normalized = [max(min(int(c * 255), 255), 0) for c in color]
+            image[pos:pos + 3] = normalized
+    header = bytes(f'P6\n{width} {height}\n255\n', 'ascii')
+    return header + image
+
+
+def fractal_noise(x, y, octaves=6, persistence=0.5, lacunarity=2.0):
+    value = 0
+    amplitude = 1
+    frequency = 1
+    for _ in range(octaves):
+        value += amplitude * noise(x * frequency, y * frequency)
+        amplitude *= persistence
+        frequency *= lacunarity
+    return value
+
+
+def noise(x, y):
+    return random.uniform(-1, 1)
+
+
+def main(shader):
+    label = tk.Label()
+    img = tk.PhotoImage(data=draw(shader, 256, 256)).zoom(2, 2)
+    label.pack()
+    label.config(image=img)
+    tk.mainloop()
+
+
+def shader(x, y):
+    cloudiness = fractal_noise(x, y)
+    brightness = (cloudiness + 1) / 2  # Normalize to [0, 1]
+    return brightness, brightness, brightness
+
+
+main(shader)

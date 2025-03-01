@@ -1,0 +1,22 @@
+def fast_mul(a, b):
+    x = []
+    y = []
+    x.append(a)
+    y.append(b)
+    while a != 1:
+        a //= 2
+        x.append(a)
+        b *= 2
+        y.append(b)
+    res = 0
+    for i in range(len(x)):
+        if x[i] % 2 != 0:
+            res += y[i]
+    return res
+
+
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+print(fast_mul(a, b))
+assert fast_mul(a, b) == a*b, 'Неверно'
+

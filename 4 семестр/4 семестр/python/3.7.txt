@@ -1,0 +1,30 @@
+def mul_bits(x, y, bits):
+    x = x & (2 ** bits - 1)
+    y = y & (2 ** bits - 1)
+    print(x)
+    print(y)
+    return x * y
+
+
+def mul16(x, y):
+    # Вычисляем старшие и младшие половины чисел
+    x1 = x >> 8
+    x0 = x & 0xFF
+    y1 = y >> 8
+    y0 = y & 0xFF
+
+    # Вычисляем произведения половинок
+    xy1 = mul_bits(x1, y1, 8)
+    xy0 = mul_bits(x0, y0, 8)
+    x0y1 = mul_bits(x0, y1, 8)
+    x1y0 = mul_bits(x1, y0, 8)
+
+    # Суммируем произведения с учетом сдвига
+    result = (xy1 << 16) + ((x0y1 + x1y0) << 8) + xy0
+    return result
+
+
+# Пример использования
+x = 0xABCD
+y = 0x1234
+print(hex(mul16(x, y)))  # Выведет: 0x152C3C

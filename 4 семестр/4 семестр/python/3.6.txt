@@ -1,0 +1,26 @@
+def fast_pow(a, b):
+    x = []
+    y = []
+    x.append(a)
+    y.append(1)
+
+    while b != 1:
+        b //= 2
+        x.append(x[-1] * x[-1])
+        y.append(b % 2)
+
+    result = 1
+
+    for i in range(len(x)):
+        if y[i] != 0:
+            result *= x[i]
+
+    return result
+
+
+a = int(input("Введите основание: "))
+b = int(input("Введите показатель степени: "))
+
+print(fast_pow(a, b))
+assert fast_pow(a, b) == a ** b, 'Неверно'
+

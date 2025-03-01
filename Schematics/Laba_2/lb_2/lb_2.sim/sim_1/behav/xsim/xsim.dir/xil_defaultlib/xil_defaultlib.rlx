@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sim_1/new/testbench.v,1740846198,verilog,,,,testbench,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/FILTER.v,1740843971,verilog,,D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/SevenSegmentLED.v,,FILTER,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/SevenSegmentLED.v,1740847491,verilog,,D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/clk_div.v,,SevenSegmentLED,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/clk_div.v,1740845064,verilog,,D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/counter.v,,clk_div,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/counter.v,1740845613,verilog,,D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/main.v,,counter,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sources_1/new/main.v,1740847997,verilog,,D:/4th_semestr/fourth_semestr/Schematics/Laba_2/lb_2/lb_2.srcs/sim_1/new/testbench.v,,main,,,,,,,,
