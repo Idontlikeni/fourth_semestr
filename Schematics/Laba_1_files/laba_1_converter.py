@@ -1,8 +1,8 @@
 import pandas as pd
 
-path = "Book1.xlsx"
+path = "Book (1).xlsx"
 
-df = pd.read_excel(path, sheet_name="Sheet3")
+df = pd.read_excel(path, sheet_name="Лист1")
 
 output = []
 

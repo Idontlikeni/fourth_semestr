@@ -1,0 +1,62 @@
+`timescale 1ns / 1ps
+module main(
+    input [3:0] SWITCHES,
+    input button_in, clk, button_reset_in,
+    output [7:0] AN,
+    output [6:0] SEG,
+    output reg [31:0] NUMBER,
+    output wire clk_div,
+    output reg [3:0] LEDS
+);
+    wire button_signal, button_signal_en, reset_signal_en, reset_signal;
+    reg[7:0] AN_MASK = 8'b11111111;
+    initial begin
+        NUMBER <= 0;
+    end
+    filtercon #(128) dbnc(
+        .clk(clk),
+        .in_signal(button_in),
+        .clock_enable(1'b1),
+        .out_signal(button_signal),
+        .out_signal_enable(button_signal_en)
+    );
+    
+    filtercon #(128) dbnc_reset(
+        .clk(clk),
+        .in_signal(button_reset_in),
+        .clock_enable(1'b1),
+        .out_signal(reset_signal),
+        .out_signal_enable(reset_signal_en)
+    );
+    
+    clk_divider #(1024) div(
+        .clk(clk),
+        .clk_div(clk_div)
+    );
+        
+    SevenSegmentLED led(
+        .AN_MASK(AN_MASK),
+        .NUMBER(NUMBER),
+        .clk(clk_div),
+        .RESET(reset_signal),
+        .AN(AN),
+        .SEG(SEG)
+    );
+    
+    always@(posedge clk)
+    begin
+        if (reset_signal)
+        begin
+            NUMBER <= 0;
+            AN_MASK <= 8'b11111111;
+        end
+        else if (button_signal_en)
+            begin
+                NUMBER <= {NUMBER[27:0], SWITCHES}; 
+                AN_MASK <= {AN_MASK[6:0], 1'b0};
+            end
+    end
+    
+    always @(posedge clk_div)
+        LEDS<=SWITCHES;
+endmodule
