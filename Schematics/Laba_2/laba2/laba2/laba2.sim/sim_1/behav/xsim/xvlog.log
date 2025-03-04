@@ -14,5 +14,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schem
 INFO: [VRFC 10-311] analyzing module synchro
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Laba_2/laba2/laba2/laba2.srcs/sim_1/new/test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module testbench
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Laba_2/laba2/laba2/laba2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

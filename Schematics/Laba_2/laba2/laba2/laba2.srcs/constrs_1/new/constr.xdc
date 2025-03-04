@@ -4,20 +4,16 @@ set_property IOSTANDARD LVCMOS33 [get_ports {clk}]
 set_property PACKAGE_PIN E3 [get_ports {clk}]
 
 #кнопки
-set_property PACKAGE_PIN N17 [get_ports {button_in}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button_in}]
-set_property PACKAGE_PIN С12 [get_ports {button_reset_in}]
-set_property IOSTANDARD LVCMOS33 [get_ports {button_reset_in}]
+
+set_property -dict {PACKAGE_PIN N17 IOSTANDARD LVCMOS33} [get_ports {button_in}]
+set_property -dict {PACKAGE_PIN С12 IOSTANDARD LVCMOS33} [get_ports {button_reset_in}]
 
 #свичи
-set_property IOSTANDARD LVCMOS33 [ get_ports { SWITCHES[0] } ]
-set_property PACKAGE_PIN J15 [ get_ports { SWITCHES[0] } ]
-set_property IOSTANDARD LVCMOS33 [ get_ports { SWITCHES[1] } ]
-set_property PACKAGE_PIN L16 [ get_ports { SWITCHES[1] } ]
-set_property IOSTANDARD LVCMOS33 [ get_ports { SWITCHES[2] } ]
-set_property PACKAGE_PIN M13 [ get_ports { SWITCHES[2] } ]
-set_property IOSTANDARD LVCMOS33 [ get_ports { SWITCHES[3] } ]
-set_property PACKAGE_PIN R15 [ get_ports { SWITCHES[3] } ]
+
+set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports {SWITCHES[0]}]
+set_property -dict {PACKAGE_PIN L16 IOSTANDARD LVCMOS33} [get_ports {SWITCHES[1]}]
+set_property -dict {PACKAGE_PIN M13 IOSTANDARD LVCMOS33} [get_ports {SWITCHES[2]}]
+set_property -dict {PACKAGE_PIN R15 IOSTANDARD LVCMOS33} [get_ports {SWITCHES[3]}]
 
 #аноды
 set_property IOSTANDARD LVCMOS33 [ get_ports { AN[0] } ]
@@ -51,14 +47,3 @@ set_property PACKAGE_PIN P15 [ get_ports { SEG[4] } ]
 set_property IOSTANDARD LVCMOS33 [ get_ports { SEG[5] } ]
 set_property PACKAGE_PIN T11 [ get_ports { SEG[5] } ]
 set_property IOSTANDARD LVCMOS33 [ get_ports { SEG[6] }
-
-
-#леды
-set_property -dict { PACKAGE_PIN H17 IOSTANDARD LVCMOS33 } [get_ports {
-LEDS[0] }];
-set_property -dict { PACKAGE_PIN K15 IOSTANDARD LVCMOS33 } [get_ports {
-LEDS[1] }];
-set_property -dict { PACKAGE_PIN J13 IOSTANDARD LVCMOS33 } [get_ports {
-LEDS[2] }]; 
-set_property -dict { PACKAGE_PIN N14 IOSTANDARD LVCMOS33 } [get_ports {
-LEDS[3] }]; 
