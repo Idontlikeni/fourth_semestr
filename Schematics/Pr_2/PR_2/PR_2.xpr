@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="C:/Uni/Files/frth_semestr/Schematics/Pr_2/PR_2/PR_2.xpr">
+<Project Version="7" Minor="61" Path="D:/4th_semestr/fourth_semestr/Schematics/Pr_2/PR_2/PR_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f0bf67053dad4eaba8859f4d41c41184"/>

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Tue Mar  4 14:00:02 2025
-| Host             : LAPTOP-HSFNMV1J running 64-bit major release  (build 9200)
+| Date             : Sat Mar  8 14:44:01 2025
+| Host             : DESKTOP-C5JARVU running 64-bit major release  (build 9200)
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
 | Device           : xc7a12ticsg325-1L
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.070        |
+| Total On-Chip Power (W)  | 0.069        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.011        |
+| Dynamic (W)              | 0.010        |
 | Device Static (W)        | 0.059        |
 | Effective TJA (C/W)      | 5.3          |
 | Max Ambient (C)          | 99.6         |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |      564 |       --- |             --- |
-|   LUT as Logic |     0.002 |      373 |      8000 |            4.66 |
-|   CARRY4       |    <0.001 |       90 |      3650 |            2.47 |
-|   Register     |    <0.001 |       80 |     16000 |            0.50 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |     0.003 |      515 |       --- |             --- |
+|   LUT as Logic |     0.002 |      340 |      8000 |            4.25 |
+|   CARRY4       |    <0.001 |       84 |      3650 |            2.30 |
+|   Register     |    <0.001 |       72 |     16000 |            0.45 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.005 |      595 |       --- |             --- |
+| Signals        |     0.005 |      544 |       --- |             --- |
 | DSPs           |    <0.001 |        1 |        40 |            2.50 |
-| I/O            |    <0.001 |      104 |       150 |           69.33 |
+| I/O            |    <0.001 |       98 |       150 |           65.33 |
 | Static Power   |     0.059 |          |           |                 |
-| Total          |     0.070 |          |           |                 |
+| Total          |     0.069 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -141,7 +141,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| main |     0.011 |
+| main |     0.010 |
 +------+-----------+
 
 
