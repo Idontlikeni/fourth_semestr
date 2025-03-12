@@ -1,0 +1,28 @@
+@startuml test_name
+    autonumber
+
+    actor Покупатель as p
+    participant "Сайт аптеки" as site
+    actor Фармацевт as f
+    participant "База данных" as bd
+    activate p
+        p -> site: Запрос на покупку \n продукта
+
+    activate site
+        site -> f: Передача информации о заказе
+
+    activate f
+        f -> bd: Проверка наличия продукта
+    
+    activate bd
+        f <-- bd: Данные о наличии продукта
+    deactivate bd
+
+    f -> f: Принятие решения о заказе
+
+    site <-- f: Информация о статусе заказа
+    deactivate f    
+    
+    p <-- site: Информация о статусе заказа
+    deactivate site
+@enduml
