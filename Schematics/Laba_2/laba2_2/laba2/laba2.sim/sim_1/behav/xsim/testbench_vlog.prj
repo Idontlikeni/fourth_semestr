@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../laba2.srcs/sources_1/new/count.v" \
+"../../../../laba2.srcs/sources_1/new/counter.v" \
+"../../../../laba2.srcs/sources_1/new/dtrigger.v" \
+"../../../../laba2.srcs/sources_1/new/filtercon.v" \
+"../../../../laba2.srcs/sources_1/new/main.v" \
+"../../../../laba2.srcs/sources_1/new/sevensegmetled.v" \
+"../../../../laba2.srcs/sources_1/new/synchro.v" \
+"../../../../laba2.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

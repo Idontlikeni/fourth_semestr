@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.sim/sim_1/behav/xsim/glbl.v,1740981138,verilog,,,,glbl,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sim_1/new/test.v,1741170260,verilog,,,,testbench,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/count.v,1740981138,verilog,,M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/counter.v,,count,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/counter.v,1740981138,verilog,,M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/dtrigger.v,,clk_divider,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/dtrigger.v,1740981138,verilog,,M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/filtercon.v,,dtrigger,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/filtercon.v,1740981138,verilog,,M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/main.v,,filtercon,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/main.v,1741169474,verilog,,M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/sevensegmetled.v,,main,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/sevensegmetled.v,1740981138,verilog,,M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/synchro.v,,SevenSegmentLED,,,,,,,,
+M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sources_1/new/synchro.v,1740981138,verilog,,M:/2010/IVBO-11-23/Timur_Tuk/actual_laba/laba2/laba2.srcs/sim_1/new/test.v,,synchro,,,,,,,,

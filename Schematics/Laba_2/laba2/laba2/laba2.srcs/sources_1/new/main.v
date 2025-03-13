@@ -5,8 +5,8 @@ module main(
     output [7:0] AN,
     output [6:0] SEG,
     output reg [31:0] NUMBER,
-    output wire clk_div
-    // output reg [3:0] LEDS
+    output wire button_en,
+    output wire button_reset_en
 );
     wire button_signal, button_signal_en, reset_signal_en, reset_signal;
     reg[7:0] AN_MASK = 8'b11111111;
