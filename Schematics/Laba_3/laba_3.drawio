@@ -35,8 +35,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="480" y="530" />
-              <mxPoint x="480" y="700" />
-              <mxPoint x="368" y="700" />
+              <mxPoint x="480" y="690" />
+              <mxPoint x="368" y="690" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -58,10 +58,22 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="U9e5x9udn6OxS3d0uARl-14" value="i от 0 до 9" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="315" y="740" width="105" height="50" as="geometry" />
+          <mxGeometry x="315" y="720" width="105" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="U9e5x9udn6OxS3d0uARl-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U9e5x9udn6OxS3d0uARl-19" target="U9e5x9udn6OxS3d0uARl-21">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="U9e5x9udn6OxS3d0uARl-19" value="повторять nums[i] раз" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="295" y="840" width="145" height="50" as="geometry" />
+          <mxGeometry x="295" y="810" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="U9e5x9udn6OxS3d0uARl-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U9e5x9udn6OxS3d0uARl-21" target="U9e5x9udn6OxS3d0uARl-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U9e5x9udn6OxS3d0uARl-21" value="sorted_arr[counter] = i" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="301.25" y="900" width="132.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="U9e5x9udn6OxS3d0uARl-23" value="counter += 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="301.25" y="970" width="132.5" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
