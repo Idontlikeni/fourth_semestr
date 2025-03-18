@@ -16,8 +16,14 @@
         <mxCell id="U9e5x9udn6OxS3d0uARl-2" value="Ввод размера массива n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="305" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="U9e5x9udn6OxS3d0uARl-4" value="Ввод элементов массива" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="U9e5x9udn6OxS3d0uARl-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U9e5x9udn6OxS3d0uARl-4" target="U9e5x9udn6OxS3d0uARl-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U9e5x9udn6OxS3d0uARl-4" value="Ввод элементов массива arr" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="305" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="U9e5x9udn6OxS3d0uARl-7" value="Создание массива nums размера 10" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="390" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
