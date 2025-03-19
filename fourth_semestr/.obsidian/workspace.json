@@ -1,6 +1,7 @@
 {
   "main": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "id": "28cd925682be5349",
     "type": "split",
     "children": [
@@ -31,12 +32,30 @@
               "icon": "lucide-book-up",
               "title": "Release Notes 1.8.9"
 =======
+=======
+    "id": "91bbe7d3d38bda88",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c91dd3d12843f16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb10d39fe963961b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+>>>>>>> Stashed changes
                 "file": "Схемотеника/Лаба 3 (12.03.2025).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Лаба 3 (12.03.2025)"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             }
           }
@@ -47,6 +66,7 @@
   },
   "left": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "id": "c6c088ec272384eb",
     "type": "split",
     "children": [
@@ -56,6 +76,17 @@
         "children": [
           {
             "id": "464cc6e31ceaf8f0",
+=======
+    "id": "8eca975c6cd8a6a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f368a30473477f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31fef5044da0ff81",
+>>>>>>> Stashed changes
 =======
     "id": "8eca975c6cd8a6a8",
     "type": "split",
@@ -80,7 +111,11 @@
           },
           {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "id": "08c15cc3f873068c",
+=======
+            "id": "1508ced235658bb4",
+>>>>>>> Stashed changes
 =======
             "id": "1508ced235658bb4",
 >>>>>>> Stashed changes
@@ -101,7 +136,11 @@
           },
           {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "id": "6ae8bb7efa37d25d",
+=======
+            "id": "b7ed40e78bb1d2f0",
+>>>>>>> Stashed changes
 =======
             "id": "b7ed40e78bb1d2f0",
 >>>>>>> Stashed changes
@@ -120,6 +159,7 @@
     "width": 300
   },
   "right": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "id": "6b66099ec5bfe871",
     "type": "split",
@@ -141,11 +181,26 @@
           {
             "id": "4077320af02c1b06",
 >>>>>>> Stashed changes
+=======
+    "id": "06f557eb14f797f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "005c42df6fda5bf8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4077320af02c1b06",
+>>>>>>> Stashed changes
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                "file": "Психология и педагогика/ДЗ 2.md",
+>>>>>>> Stashed changes
 =======
                 "file": "Психология и педагогика/ДЗ 2.md",
 >>>>>>> Stashed changes
@@ -159,6 +214,7 @@
               },
               "icon": "links-coming-in",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "title": "Backlinks"
             }
           },
@@ -171,11 +227,22 @@
           {
             "id": "90c70457089b465b",
 >>>>>>> Stashed changes
+=======
+              "title": "Backlinks for ДЗ 2"
+            }
+          },
+          {
+            "id": "90c70457089b465b",
+>>>>>>> Stashed changes
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                "file": "Психология и педагогика/ДЗ 2.md",
+>>>>>>> Stashed changes
 =======
                 "file": "Психология и педагогика/ДЗ 2.md",
 >>>>>>> Stashed changes
@@ -184,11 +251,19 @@
               },
               "icon": "links-going-out",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "title": "Outgoing links"
             }
           },
           {
             "id": "179b41a3db3a8778",
+=======
+              "title": "Outgoing links from ДЗ 2"
+            }
+          },
+          {
+            "id": "5b8111eaccce6895",
+>>>>>>> Stashed changes
 =======
               "title": "Outgoing links from ДЗ 2"
             }
@@ -211,7 +286,11 @@
           },
           {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "id": "3ebdb9eb6bd5b9f9",
+=======
+            "id": "83774e6e82548aea",
+>>>>>>> Stashed changes
 =======
             "id": "83774e6e82548aea",
 >>>>>>> Stashed changes
@@ -220,6 +299,10 @@
               "type": "outline",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                "file": "Психология и педагогика/ДЗ 2.md",
+>>>>>>> Stashed changes
 =======
                 "file": "Психология и педагогика/ДЗ 2.md",
 >>>>>>> Stashed changes
@@ -229,7 +312,11 @@
               },
               "icon": "lucide-list",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "title": "Outline"
+=======
+              "title": "Outline of ДЗ 2"
+>>>>>>> Stashed changes
 =======
               "title": "Outline of ДЗ 2"
 >>>>>>> Stashed changes
@@ -254,9 +341,12 @@
     }
   },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "active": "9ea52deb8548c343",
   "lastOpenFiles": []
 =======
+=======
+>>>>>>> Stashed changes
   "active": "cb10d39fe963961b",
   "lastOpenFiles": [
     "Схемотеника/ПР 3.md",
