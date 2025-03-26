@@ -1,21 +1,24 @@
-def print_array(arr):
-    for a in arr:
-        print(a, end=' ')
-    print("\n")
+def merge(arr, left, mid, right):
+    it1 = 0
+    it2 = 0
 
+    result = [0 for _ in range(right - left)]
 
-def subsort(arr, n):
-    nums = [0 for _ in range(10)]
-    sorted_arr  = [0 for _ in range(n)]
-    counter = 0
-    for i in arr:
-        nums[i]+=1
+    while left + it1 < mid and mid + it2 < right:
+        if arr[left + it1] < arr[mid + it2]:
+            result[it1 + it2] = arr[left + it1]
+            it1 += 1
+        else:
+            result[it1 + it2] = arr[mid + it2]
+            it2 += 1
 
-    for i in range(10):
-        for _ in range(nums[i]):
-            sorted_arr[counter] = i
-            counter += 1
+    while left + it1 < mid:
+        result[it1 + it2] = arr[left + it1]
+        it1 += 1
     
-    return sorted_arr
-
-print(subsort([4, 7, 3, 2, 5, 6, 3, 1], 8))
+    while mid + it2 < right:
+        result[it1 + it2] = arr[mid + it2]
+        it2 += 1
+    
+    for i in range(it1 + it2):
+        arr[left + i] = result[i]
