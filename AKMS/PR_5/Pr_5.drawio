@@ -121,7 +121,7 @@
         <mxCell id="IxSXKOBwQXMGK9RXXxhk-0" value="Database" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="60" y="534" width="160" height="124" as="geometry" />
         </mxCell>
-        <mxCell id="IxSXKOBwQXMGK9RXXxhk-1" value="-users&lt;div&gt;-workers&lt;/div&gt;&lt;div&gt;-medications&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="IxSXKOBwQXMGK9RXXxhk-0" vertex="1">
+        <mxCell id="IxSXKOBwQXMGK9RXXxhk-1" value="-clients: Client[]&lt;div&gt;-workers: Worker[]&lt;/div&gt;&lt;div&gt;-medications: Medication[]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="IxSXKOBwQXMGK9RXXxhk-0" vertex="1">
           <mxGeometry y="26" width="160" height="64" as="geometry" />
         </mxCell>
         <mxCell id="IxSXKOBwQXMGK9RXXxhk-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="IxSXKOBwQXMGK9RXXxhk-0" vertex="1">
