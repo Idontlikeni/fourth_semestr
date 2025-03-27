@@ -20,5 +20,21 @@ def merge(arr, left, mid, right):
         result[it1 + it2] = arr[mid + it2]
         it2 += 1
     
-    for i in range(it1 + it2):
-        arr[left + i] = result[i]
+    # for i in range(it1 + it2):
+    #     arr[left + i] = result[i]
+    return result
+
+def mergeSortIterative(a):
+    i = 1
+    n = len(a)
+    while i < n:
+        for j in range(0, n-i, 2 * i):
+            a = merge(a, j, j + i, min(j + 2 * i, n))
+    i *= 2
+
+arr = [12, 5, 32, 6, 1, 4, 63, 2]
+
+# print(mergeSortIterative(arr))
+
+# merge(arr, 0, 4, len(arr))
+print(mergeSortIterative(arr))
