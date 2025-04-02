@@ -98,6 +98,9 @@
         <mxCell id="Qg-w_8mMQBjfOll7AvgI-25" value="Дополнить result значениями из непустого массива" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="390" y="790" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="3bILmgcqspAKuhFR0M4J-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qg-w_8mMQBjfOll7AvgI-26" target="3bILmgcqspAKuhFR0M4J-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Qg-w_8mMQBjfOll7AvgI-26" value="Записать значения result в arr, начиная с индекса left" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="390" y="890" width="120" height="60" as="geometry" />
         </mxCell>
@@ -166,6 +169,9 @@
         </mxCell>
         <mxCell id="Qg-w_8mMQBjfOll7AvgI-44" value="Конец" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1050" y="545" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="3bILmgcqspAKuhFR0M4J-1" value="Конец" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="990" width="80" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
