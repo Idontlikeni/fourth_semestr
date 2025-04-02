@@ -20,7 +20,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Qg-w_8mMQBjfOll7AvgI-4" value="result[right-left] = [0, ..., 0]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="375" y="210" width="150" height="60" as="geometry" />
+          <mxGeometry x="375" y="220" width="150" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Qg-w_8mMQBjfOll7AvgI-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Qg-w_8mMQBjfOll7AvgI-6" target="Qg-w_8mMQBjfOll7AvgI-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
