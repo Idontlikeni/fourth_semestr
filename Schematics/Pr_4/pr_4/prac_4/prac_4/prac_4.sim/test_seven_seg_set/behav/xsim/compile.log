@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.srcs/designs/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+WARNING: [VRFC 10-8332] begin/end is required for generate-for in this mode of Verilog [D:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.srcs/designs/seven_seg.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.srcs/testbenches/test_seven_seg_set/test_seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.sim/test_seven_seg_set/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

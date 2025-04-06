@@ -32,7 +32,7 @@ def mergeSortIterative(a):
             merge(a, j, j + i, min(j + 2 * i, n))
         i *= 2
 
-arr = [12, 5, 32, 6, 1, 4, 63, 2]
+arr = [5, 3, 6, 1, 2]
 
 # print(mergeSortIterative(arr))
 
