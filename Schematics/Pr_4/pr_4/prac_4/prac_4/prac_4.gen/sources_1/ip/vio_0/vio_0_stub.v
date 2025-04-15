@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Sun Apr  6 18:09:40 2025
+// Date        : Fri Apr 11 19:38:06 2025
 // Host        : DESKTOP-C5JARVU running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.gen/sources_1/ip/vio_0/vio_0_stub.v

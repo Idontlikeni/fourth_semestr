@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.srcs/designs/fsm_div.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_div
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.srcs/testbenches/test_fsm_div_set/test_fsm_div.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test_fsm_div
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/Pr_4/pr_4/prac_4/prac_4/prac_4.sim/test_fsm_div_set/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
