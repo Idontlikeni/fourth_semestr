@@ -13,4 +13,4 @@ def main(s):
             dct[i[0].strip()] = list(map(int, i[1].strip().split(',')))
     return dct
 
-#  print(main('<: do var eroror_601 := array(2816 , -8595 , -5388 , 2978 )end do var razati_883 := array( -9709 , -2010 , -7553 , 2)end do var erdi:= array( 6400 , -5978 ,173 )end:>'))
+print(main('<: do var eroror_601 := array(2816 , -8595 , -5388 , 2978 )end do var razati_883 := array( -9709 , -2010 , -7553 , 2)end do var erdi:= array( 6400 , -5978 ,173 )end:>'))

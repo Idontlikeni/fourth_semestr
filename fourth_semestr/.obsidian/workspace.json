@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Психология и педагогика/ДЗ 5.md",
+                "file": "ПИТООН/Коллоквиум.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ДЗ 5"
+              "title": "Коллоквиум"
+            }
+          },
+          {
+            "id": "1e145f20201b472f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-04-18 09.33.13.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-04-18 09.33.13.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,10 +182,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "eb78fb04e5f7989c",
+  "active": "d23d23cf6415c724",
   "lastOpenFiles": [
-    "Философия/ДЗ 4 ig.md",
+    "Excalidraw/Drawing 2025-04-18 09.33.13.excalidraw.md",
+    "Pasted Image 20250418095123_017.png",
+    "Pasted Image 20250418094959_267.png",
+    "Pasted Image 20250418094649_828.png",
+    "Pasted Image 20250418093337_573.png",
+    "ПИТООН/Коллоквиум.md",
+    "Excalidraw",
+    "Pasted image 20250418093248.png",
     "Психология и педагогика/ДЗ 5.md",
+    "ПИТООН",
+    "Философия/ДЗ 4 ig.md",
     "Философия/ПР 2 (24.02.2025).md",
     "Философия/ПР 3.md",
     "Английский/ДЗ 3.md",
