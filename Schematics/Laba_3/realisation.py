@@ -34,7 +34,4 @@ def mergeSortIterative(a):
 
 arr = [5, 3, 6, 1, 2]
 
-# print(mergeSortIterative(arr))
-
-# merge(arr, 0, 4, len(arr))
 print(mergeSortIterative(arr), arr)

@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sim_1/new/test.v,1745172785,verilog,,,,test,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sources_1/new/fifo_one_clock.v,1745169396,verilog,,D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sources_1/new/fifo_two_clock.v,,fifo_one_clock,,,,,,,,
+D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sources_1/new/fifo_two_clock.v,1745170958,verilog,,D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sim_1/new/test.v,,fifo_two_clock,,,,,,,,

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sources_1/new/fifo_one_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_one_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sources_1/new/fifo_two_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_two_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/4th_semestr/fourth_semestr/Schematics/pr5/Fifo/Fifo.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
