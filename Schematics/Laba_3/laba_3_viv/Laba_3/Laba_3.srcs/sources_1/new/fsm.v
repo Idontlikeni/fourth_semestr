@@ -1,13 +1,15 @@
-module fsm(
-    input [15:0] dataIn, // не забудь поменять здесь на 4 бита если надо
+module fsm#(max_size = 16, bit_size = 16)
+(
+    input [bit_size-1:0] n,
+    input [bit_size-1:0] dataIn, // не забудь поменять здесь на 4 бита если надо
     input R_I,
     input reset,
     input clk, 
-    output reg [15:0] dataOut,
+    output reg [bit_size * max_size - 1: 0] dataOut,
     output reg R_O
     );
     
-parameter max_size = 16, bit_size = 16,S0 = 0, S1 = 1, S2 = 2, S3 = 3, S4 = 4;
+localparam S0 = 3'b000, S1 = 3'b001, S2 = 3'b010, S3 = 3'b011, S4 = 3'b100, S5 = 3'b101, S6 = 3'b110;
 
 // S0 - reset/start
 // S1 - DataIn - N
@@ -15,130 +17,174 @@ parameter max_size = 16, bit_size = 16,S0 = 0, S1 = 1, S2 = 2, S3 = 3, S4 = 4;
 // S3 - Sort
 // S4 - Print
 
-reg [bit_size-1:0] n, next_dataOut; //  размер массива
+// reg [bit_size-1:0] n; //  размер массива, след. вывод данных.
 reg [bit_size-1:0] arr [0:max_size-1]; // Массив
 
 reg [bit_size * max_size - 1:0] flattered_arr; // Норм массив блэать.
 
-reg [1:0] state, next_state;
-reg next_R_O;
+reg [2:0] state; // состояния
 
-reg [bit_size:0] counter;
+reg [bit_size - 1:0] counter; // счетчик индекса массива
 
 integer i;
 integer j;
+integer k;
+integer g;
 
-task merge (input reg [bit_size * max_size - 1:0] flat_arr, input reg [bit_size - 1:0] left, input reg [bit_size - 1:0] mid, input reg [bit_size - 1:0] right);
-    
-    reg [bit_size - 1:0] it1;
-    reg [bit_size - 1:0] it2;
-    
-    reg [bit_size - 1:0] result [0:max_size];
-    
-    reg [bit_size - 1:0] arr [0:max_size];
-    
-    while(left + it1 < mid && mid + it2 < right)begin
-        if(arr[left + it1] < arr[mid + it2])begin
-            result[it1 + it2] <= arr[left + it1];
-            it1 <= it1 + 1;
-        end
-        else begin
-            result[it1 + it2] <= arr[mid + it2];
-            it2 <= it2 + 1;
-        end
-    end
-    
-    while(left + it1 < mid)begin
-        result[it1 + it2] <= arr[left + it1];
-        it1 <= it1 + 1;
-    end
+reg [bit_size - 1:0] it1;
+reg [bit_size - 1:0] it2;
 
-    while(mid + it2 < right)begin
-        result[it1 + it2] <= arr[mid + it2];
-        it2 <= it2 + 1;
-    end
-    
-    for(i = 0; i < it1 + it2; i = i + 1)begin 
-        arr[left + i] <= result[i];
-    end
-    
-endtask
+reg [bit_size - 1:0] result [0:max_size - 1]; // массив для хранения временных отсортированных данных.
 
-task merge_sort (input reg [bit_size * max_size - 1:0] flat_arr, input reg [bit_size - 1:0] n);
-    for(i = 1; i < n; i = i * 2)begin 
-        for(j = 0; j < n - i; j = j + 2 * i)begin
-            if(j + 2 * i < n)
-                merge(flat_arr, j, j + i, j + 2 * i);
-            else
-                merge(flat_arr, j, j + i, n);
-        end
-    end
-endtask
+reg [1:0] z;
 
-initial begin
-    state <= 0;
-    n <= 0;
-    R_O <= 0;
+reg [bit_size * max_size - 1: 0] packed;
+
+initial
+begin
+    state <= S0;
+    // n <= 0;
+    it1 <= 0;
+    it2 <= 0;
     counter <= 0;
+    packed <= 0;
+    R_O <= 0;
+    for(i = 0; i < max_size; i = i + 1)begin
+        arr[i] <= 0;
+        result[i] <= 0;
+    end
 end
 
-// Трехпроцессорный стиль стиль
+function [1:0] merge (input reg [bit_size - 1:0] left, input reg [bit_size - 1:0] mid, input reg [bit_size - 1:0] right);
+    begin
+        // $display("RIGHT = %0h", right);
+        while((left + it1 < mid) && (mid + it2 < right))begin
+            if(arr[left + it1] < arr[mid + it2])begin
+                result[it1 + it2] = arr[left + it1];
+                it1 = it1 + 1;
+            end
+            else begin
+                result[it1 + it2] = arr[mid + it2];
+                it2 = it2 + 1;
+            end
+        end
+        
+        while(left + it1 < mid)begin
+            result[it1 + it2] = arr[left + it1];
+            it1 = it1 + 1;
+        end
+    
+        while(mid + it2 < right)begin
+            result[it1 + it2] = arr[mid + it2];
+            it2 = it2 + 1;
+        end
+        
+        for(g = 0; g < it1 + it2; g = g + 1)begin 
+            arr[left + g] = result[g];
+        end
+    end
+endfunction 
 
 always@(posedge clk)
 begin
-    if (reset)
+    if(reset)begin
+        it1 <= 0;
+        it2 <= 0;
+        counter <= 0;
+        R_O <= 0;
+        dataOut <= 0;
+        for(i = 0; i < max_size; i = i + 1)begin
+            arr[i] = 0;
+            result[i] = 0;
+        end
         state <= S0;
-    else begin
-        state <= next_state;
-        R_O <= next_R_O;
-        dataOut <= next_dataOut;
     end
-end
-
-always@*
+    else
     case(state)
-        S0: next_state <= S1; // Начало рабты
-        S1: if(R_I) // чтение размера массива
-                next_state <= S2;
-            else
-                next_state <= state;
-        S2: if(R_I && counter == n) // чтение элементов массива
-                next_state <= S3;
-            else 
-                next_state <= state;
-        default: next_state <= state;
-    
-    endcase
-
-always@*
-begin
-    case(state)
-        S0: begin
-            next_R_O <= 0;
-            next_dataOut <= 0;
-            n <= 0;
+        S0:
+        begin
+            // n <= 0;
+            it1 <= 0;
+            it2 <= 0;
             counter <= 0;
+            R_O <= 0;
+            dataOut <= 0;
+            for(i = 0; i < max_size; i = i + 1)begin
+                arr[i] = 0;
+                result[i] = 0;
+            end
+            state <= S2;
         end
-        S1: begin
-            if (R_I) n <= dataIn;
-        end
-        S2: begin
-            if (R_I) begin // При приход сигнала R_I считаем след. значение массива. 
+//        S1: // ввод n
+//        begin
+//            if(R_I)begin
+//                n <= dataIn;
+//                state <= S2;
+//            end
+//        end
+        S2: // ввод массива
+        begin
+            if(R_I) begin
                 arr[counter] <= dataIn;
-                //flatted_arr[counter * bit_size:bit_size] <= dataIn;
                 counter <= counter + 1;
             end
-        end
-        S3: begin // Здесь и должна проходить магия
-            for(i = 0; i < n; i = i + 1) begin // преобразуем массив в плоский
-                flattered_arr[i * bit_size+:bit_size] <= arr[i];
+            if(counter == n)begin
+                state <= S3;
+                i <= 1;
             end
-            merge_sort(flattered_arr, n);
-        end
-        S4: begin // Вывод элементов на дисплей
+        end // сортировка
+        
+        S3: begin
+            if(i < n)begin
+                j <= 0;
+                state <= S4;
+            end else state <= S6;
             
         end
-     endcase
-end 
-
+        
+        S4:begin
+            if(j < n - i)begin
+                if(j + 2 * i < n)
+                    z = merge(j, j + i, j + 2 * i);
+                else
+                    z = merge(j, j + i, n);
+                    it1 = 0;
+                    it2 = 0;
+                j <= j + 2 * i;
+                state <= S4;
+            end else begin
+                state <= S3;
+                i <= i * 2;
+            end
+        end
+        
+//        S3: begin
+//            //state <= S0;
+//            for(i = 1; i < n; i = i * 2)begin 
+//                for(j = 0; j < n - i; j = j + 2 * i)begin
+//                    // $display("i: %d, j: %d", i, j);
+//                    if(j + 2 * i < n)
+//                        z = merge(j, j + i, j + 2 * i);
+//                    else
+//                        z = merge(j, j + i, n);
+//                    it1 = 0;
+//                    it2 = 0;
+////                    for(k = 0; k < max_size; k = k + 1)begin
+////                        result[k] = 0;
+////                    end
+//                end
+//            end
+//            counter <= 0;
+//            state <= S6;
+//        end
+        S6: begin
+            R_O <= 1'b1;
+            for (i = 0; i < n; i = i + 1) begin
+                packed[i*bit_size +: bit_size] = arr[n - 1 - i];  // "+:" - part-select
+            end
+            dataOut <= packed;
+            //state <= S0;
+        end
+    endcase
+end
 endmodule

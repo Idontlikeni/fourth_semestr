@@ -30,8 +30,10 @@ def mergeSortIterative(a):
     while i < n:
         for j in range(0, n-i, 2 * i):
             merge(a, j, j + i, min(j + 2 * i, n))
+            print(i, j)
         i *= 2
-
+n = 5
 arr = [5, 3, 6, 1, 2]
-
+for i in arr:
+    print(bin(i))
 print(mergeSortIterative(arr), arr)

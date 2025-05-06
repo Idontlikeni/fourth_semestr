@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="70.000001 us"></ZoomEndTime>
+      <Cursor1Time time="120.500000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="287"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wvobject fp_name="/testbench2/cntlr/error_flag" type="logic">
+      <obj_property name="ElementShortName">error_flag</obj_property>
+      <obj_property name="ObjectShortName">error_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/SWITCHES" type="array">
+      <obj_property name="ElementShortName">SWITCHES[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SWITCHES[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/button_in" type="logic">
+      <obj_property name="ElementShortName">button_in</obj_property>
+      <obj_property name="ObjectShortName">button_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/button_reset_in" type="logic">
+      <obj_property name="ElementShortName">button_reset_in</obj_property>
+      <obj_property name="ObjectShortName">button_reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/AN" type="array">
+      <obj_property name="ElementShortName">AN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/SEG" type="array">
+      <obj_property name="ElementShortName">SEG[6:0]</obj_property>
+      <obj_property name="ObjectShortName">SEG[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/NUMBER" type="array">
+      <obj_property name="ElementShortName">NUMBER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUMBER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/button_en" type="logic">
+      <obj_property name="ElementShortName">button_en</obj_property>
+      <obj_property name="ObjectShortName">button_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/button_reset_en" type="logic">
+      <obj_property name="ElementShortName">button_reset_en</obj_property>
+      <obj_property name="ObjectShortName">button_reset_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/button_signal" type="logic">
+      <obj_property name="ElementShortName">button_signal</obj_property>
+      <obj_property name="ObjectShortName">button_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/button_signal_en" type="logic">
+      <obj_property name="ElementShortName">button_signal_en</obj_property>
+      <obj_property name="ObjectShortName">button_signal_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/reset_signal_en" type="logic">
+      <obj_property name="ElementShortName">reset_signal_en</obj_property>
+      <obj_property name="ObjectShortName">reset_signal_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/reset_signal" type="logic">
+      <obj_property name="ElementShortName">reset_signal</obj_property>
+      <obj_property name="ObjectShortName">reset_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/AN_MASK" type="array">
+      <obj_property name="ElementShortName">AN_MASK[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AN_MASK[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/dataIn" type="array">
+      <obj_property name="ElementShortName">dataIn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/n" type="array">
+      <obj_property name="ElementShortName">n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">n[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/R_O" type="logic">
+      <obj_property name="ElementShortName">R_O</obj_property>
+      <obj_property name="ObjectShortName">R_O</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/clk_div" type="logic">
+      <obj_property name="ElementShortName">clk_div</obj_property>
+      <obj_property name="ObjectShortName">clk_div</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/n" type="array">
+      <obj_property name="ElementShortName">n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">n[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/dataIn" type="array">
+      <obj_property name="ElementShortName">dataIn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/R_I" type="logic">
+      <obj_property name="ElementShortName">R_I</obj_property>
+      <obj_property name="ObjectShortName">R_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/R_O" type="logic">
+      <obj_property name="ElementShortName">R_O</obj_property>
+      <obj_property name="ObjectShortName">R_O</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/arr" type="array">
+      <obj_property name="ElementShortName">arr[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">arr[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/flattered_arr" type="array">
+      <obj_property name="ElementShortName">flattered_arr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">flattered_arr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/counter" type="array">
+      <obj_property name="ElementShortName">counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/k" type="array">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/g" type="array">
+      <obj_property name="ElementShortName">g[31:0]</obj_property>
+      <obj_property name="ObjectShortName">g[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/it1" type="array">
+      <obj_property name="ElementShortName">it1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">it1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/it2" type="array">
+      <obj_property name="ElementShortName">it2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">it2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/result" type="array">
+      <obj_property name="ElementShortName">result[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">result[0:3][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/z" type="array">
+      <obj_property name="ElementShortName">z[1:0]</obj_property>
+      <obj_property name="ObjectShortName">z[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/packed" type="array">
+      <obj_property name="ElementShortName">packed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">packed[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/max_size" type="array">
+      <obj_property name="ElementShortName">max_size[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_size[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/bit_size" type="array">
+      <obj_property name="ElementShortName">bit_size[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_size[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/S0" type="array">
+      <obj_property name="ElementShortName">S0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S0[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/S1" type="array">
+      <obj_property name="ElementShortName">S1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/S2" type="array">
+      <obj_property name="ElementShortName">S2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S2[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/S3" type="array">
+      <obj_property name="ElementShortName">S3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench2/cntlr/fsm1/S4" type="array">
+      <obj_property name="ElementShortName">S4[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S4[2:0]</obj_property>
+   </wvobject>
+</wave_config>
