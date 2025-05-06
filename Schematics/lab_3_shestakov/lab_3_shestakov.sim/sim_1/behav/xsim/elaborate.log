@@ -1,0 +1,28 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Xilinx_Windows_Unpacked_2022_2/Xilinx_Windows_Unpacked_2022_2/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dir' [C:/Uni/Files/frth_semestr/Schematics/lab_3_shestakov/lab_3_shestakov.srcs/sources_1/new/filtercon.v:25]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'out' [C:/Uni/Files/frth_semestr/Schematics/lab_3_shestakov/lab_3_shestakov.srcs/sources_1/new/filtercon.v:27]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'SEG' [C:/Uni/Files/frth_semestr/Schematics/lab_3_shestakov/lab_3_shestakov.srcs/sources_1/new/main.v:55]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Uni/Files/frth_semestr/Schematics/lab_3_shestakov/lab_3_shestakov.srcs/sources_1/new/SevenSegmentLED.v" Line 1. Module SevenSegmentLED doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Uni/Files/frth_semestr/Schematics/lab_3_shestakov/lab_3_shestakov.srcs/sources_1/new/SevenSegmentLED.v" Line 1. Module SevenSegmentLED doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dtrigger
+Compiling module xil_defaultlib.synchro
+Compiling module xil_defaultlib.count
+Compiling module xil_defaultlib.filtercon(mode=128)
+Compiling module xil_defaultlib.count(mod=512)
+Compiling module xil_defaultlib.clk_divider(div=1024)
+Compiling module xil_defaultlib.count(mod=8)
+Compiling module xil_defaultlib.SevenSegmentLED
+Compiling module xil_defaultlib.batcher_sort_fsm
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
