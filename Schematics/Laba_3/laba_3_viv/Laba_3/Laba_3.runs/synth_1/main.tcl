@@ -108,6 +108,8 @@ read_xdc D:/4th_semestr/fourth_semestr/Schematics/Laba_3/laba_3_viv/Laba_3/Laba_
 set_property used_in_implementation false [get_files D:/4th_semestr/fourth_semestr/Schematics/Laba_3/laba_3_viv/Laba_3/Laba_3.srcs/constrs_1/new/constr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/4th_semestr/fourth_semestr/Schematics/Laba_3/laba_3_viv/Laba_3/Laba_3.srcs/utils_1/imports/synth_1/main.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

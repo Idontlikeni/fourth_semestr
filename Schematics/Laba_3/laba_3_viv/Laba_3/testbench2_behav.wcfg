@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="70.000001 us"></ZoomEndTime>
-      <Cursor1Time time="120.500000 us"></Cursor1Time>
+      <ZoomEndTime time="124.800001 us"></ZoomEndTime>
+      <Cursor1Time time="42.500000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="287"></NameColumnWidth>
-      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+      <ValueColumnWidth column_width="136"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="49" />
+   <WVObjectSize size="42" />
    <wvobject fp_name="/testbench2/cntlr/error_flag" type="logic">
       <obj_property name="ElementShortName">error_flag</obj_property>
       <obj_property name="ObjectShortName">error_flag</obj_property>
@@ -187,33 +187,5 @@
    <wvobject fp_name="/testbench2/cntlr/fsm1/packed" type="array">
       <obj_property name="ElementShortName">packed[15:0]</obj_property>
       <obj_property name="ObjectShortName">packed[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench2/cntlr/fsm1/max_size" type="array">
-      <obj_property name="ElementShortName">max_size[31:0]</obj_property>
-      <obj_property name="ObjectShortName">max_size[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench2/cntlr/fsm1/bit_size" type="array">
-      <obj_property name="ElementShortName">bit_size[31:0]</obj_property>
-      <obj_property name="ObjectShortName">bit_size[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench2/cntlr/fsm1/S0" type="array">
-      <obj_property name="ElementShortName">S0[2:0]</obj_property>
-      <obj_property name="ObjectShortName">S0[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench2/cntlr/fsm1/S1" type="array">
-      <obj_property name="ElementShortName">S1[2:0]</obj_property>
-      <obj_property name="ObjectShortName">S1[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench2/cntlr/fsm1/S2" type="array">
-      <obj_property name="ElementShortName">S2[2:0]</obj_property>
-      <obj_property name="ObjectShortName">S2[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench2/cntlr/fsm1/S3" type="array">
-      <obj_property name="ElementShortName">S3[2:0]</obj_property>
-      <obj_property name="ObjectShortName">S3[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench2/cntlr/fsm1/S4" type="array">
-      <obj_property name="ElementShortName">S4[2:0]</obj_property>
-      <obj_property name="ObjectShortName">S4[2:0]</obj_property>
    </wvobject>
 </wave_config>

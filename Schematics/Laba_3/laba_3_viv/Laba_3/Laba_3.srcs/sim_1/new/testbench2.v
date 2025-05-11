@@ -135,7 +135,7 @@ module testbench2;
         #8000;
         
         
-         SWITCHES = 4'b0101;
+        SWITCHES = 4'b0101;
         repeat($urandom_range(50,0))
         begin
             button = $random;
