@@ -3,14 +3,15 @@ module main(
     input [3:0] SWITCHES,
     input button_in, clk, button_reset_in,
     output [7:0] AN,
-    output [6:0] SEG
-//    output reg [31:0] NUMBER,
-//    output wire button_en,
-//    output wire button_reset_en,
-//    output reg error_output
+    output [6:0] SEG,
+    output reg [31:0] NUMBER,
+    output wire button_en,
+    output wire button_reset_en,
+    output reg error_output
 );
-    wire button_signal, button_signal_en, reset_signal_en, reset_signal;
-    reg error_output;
+//    wire button_signal, button_signal_en, reset_signal_en, reset_signal;
+//    reg error_output;
+//    reg [31:0] NUMBER;
     reg[7:0] AN_MASK = 8'b11111111;
     reg [3:0] dataIn;
     wire [15:0] dataOut;
@@ -19,7 +20,7 @@ module main(
     reg error_flag;
     wire R_O;
     reg R_I;
-    reg [31:0] NUMBER;
+    
     initial begin
         NUMBER <= 0;
         dataIn <= 0;
