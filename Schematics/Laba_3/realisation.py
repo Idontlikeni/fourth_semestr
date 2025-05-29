@@ -47,7 +47,7 @@ def merge(arr, left, mid, right):
     return result
 
 def mergeSortIterative(a):
-    if len(a) > 4: 
+    if len(a) == 0: 
         return [-1]
     i = 1
     n = len(a)
@@ -61,12 +61,12 @@ arr = [7, 3, 1]
 
 print(mergeSortIterative(arr), arr)
 
-n = 4
-arr = [7, 3, 1, 2]
+n = 5
+arr = [7, 3, 1, 5, 2]
 
 print(mergeSortIterative(arr), arr)
 
-n = 5
-arr = [1, 2, 7, 4, 2]
+n = 0
+arr = []
 
 print(mergeSortIterative(arr), arr)
