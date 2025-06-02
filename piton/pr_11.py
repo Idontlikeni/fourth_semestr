@@ -1,10 +1,11 @@
-class CustomError(Exception):
-    def __init__(self, msg):
+class MachineException(Exception):
+    def __init__(self, msg="default error"):
         self.msg = msg
         super().__init__(self.msg)
 
-    def __str__(self):
-        return f"{self.msg} Error code: {self.error_code})"
+    # def __str__(self):
+    #     return f"{self.msg} Error code"
+
 
 class MooreMachine:
     def __init__(self):
@@ -19,7 +20,10 @@ class MooreMachine:
         self.vs['y'] = y
 
     def boost(self):
-        self.mt.add('boost')
+        match self.state:
+            case "v7" | "v1" | "v2" | "v4":
+                self.mt.add('boost')
+
         match self.state:
             case "v7":
                 self.state = "v1"
@@ -34,10 +38,13 @@ class MooreMachine:
             case "v4" if self.vs['r'] == 1:
                 self.state = "v2"
             case _:
-                raise CustomError("unsupported", 400)
+                raise MachineException("unsupported")
 
     def patch(self):
-        self.mt.add('patch')
+        match self.state:
+            case "v0" | "v6" | "v3":
+                self.mt.add('patch')
+
         match self.state:
             case "v0":
                 self.state = "v5"
@@ -46,28 +53,27 @@ class MooreMachine:
             case "v3":
                 self.state = "v4"
             case _:
-                raise CustomError("unsupported", 400)
+                raise MachineException("unsupported")
 
     def tag(self):
-        self.mt.add('tag')
         match self.state:
             case "v5":
+                self.mt.add('tag')
                 self.state = "v6"
             case _:
-                raise CustomError("unsupported", 400)
+                raise MachineException("unsupported")
 
     def init(self):
-        self.mt.add('init')
+        match self.state:
+            case "v6" | "v2":
+                self.mt.add('init')
         match self.state:
             case "v6":
                 self.state = "v3"
             case "v2":
                 self.state = "v1"
             case _:
-                raise CustomError("unsupported", 400)
-    
-    def set_var(self, var, val):
-        self.vs[var] = val
+                raise MachineException("unsupported")
 
     def get_output(self):
         match self.state:
@@ -75,7 +81,7 @@ class MooreMachine:
                 return "F1"
             case "v1" | "v2":
                 return "F0"
-            case "v0" | "v5" | "v6" | "v4":
+            case _:  # "v0" | "v5" | "v6" | "v4":
                 return "F2"
 
     def has_path_to(self, state):
@@ -85,8 +91,9 @@ class MooreMachine:
         return m in self.mt
 
     def __getattr__(self, name):
-        raise CustomError("unkown", 400)
+        raise MachineException("unknown")
         return lambda: "unknown"
+
 
 def main():
     return MooreMachine()
@@ -131,5 +138,28 @@ def test():
     assert obj.get_output() == 'F2'
     assert obj.seen_method('boost')
     assert obj.has_path_to('v5')
-    
+    try:
+        obj.boost()
+    except MachineException as e:
+        assert e.msg == "unsupported"
 
+    try:
+        obj.tag()
+    except MachineException as e:
+        assert e.msg == "unsupported"
+
+    try:
+        obj.init()
+    except MachineException as e:
+        assert e.msg == "unsupported"
+
+    try:
+        obj.keks()
+    except MachineException as e:
+        assert e.msg == "unknown"
+
+    obj.patch()
+    try:
+        obj.patch()
+    except MachineException as e:
+        assert e.msg == "unsupported"
