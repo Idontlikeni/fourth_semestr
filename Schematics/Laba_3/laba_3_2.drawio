@@ -231,11 +231,31 @@
         <mxCell id="KJKlyDsI21KkTeVdRT-c-64" value="arr[left + it1] &amp;lt; arr[mid + it2]" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1167.5" y="290" width="185" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KJKlyDsI21KkTeVdRT-c-67" target="KJKlyDsI21KkTeVdRT-c-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="KJKlyDsI21KkTeVdRT-c-67" value="&amp;nbsp; &amp;nbsp; result[it1 + it2] = arr[left + it1];&lt;br&gt;&amp;nbsp; &amp;nbsp; it1 = it1 + 1;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1165" y="400" width="190" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJKlyDsI21KkTeVdRT-c-70" target="KJKlyDsI21KkTeVdRT-c-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="510" />
+              <mxPoint x="1260" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="KJKlyDsI21KkTeVdRT-c-70" value="&amp;nbsp; &amp;nbsp; result[it1 + it2] = arr[mid + it2];&lt;br&gt;&amp;nbsp; &amp;nbsp; it2 = it2 + 1;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="970" y="300" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KJKlyDsI21KkTeVdRT-c-73" target="KJKlyDsI21KkTeVdRT-c-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-73" value="state &amp;lt;= S5" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="540" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-76" value="S5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="590" width="40" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
