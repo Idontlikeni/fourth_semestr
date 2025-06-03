@@ -13,6 +13,20 @@
         <mxCell id="KJKlyDsI21KkTeVdRT-c-2" value="&amp;nbsp; &amp;nbsp; loop_flag &amp;lt;= 0;&amp;nbsp; &amp;nbsp; &amp;nbsp;state &amp;lt;= S0;&lt;br&gt;&amp;nbsp; &amp;nbsp; it1 &amp;lt;= 0;&amp;nbsp; &amp;nbsp; it2 &amp;lt;= 0;&lt;br&gt;&amp;nbsp; &amp;nbsp; counter &amp;lt;= 0;&amp;nbsp; &amp;nbsp; packed &amp;lt;= 0;&lt;br&gt;&amp;nbsp; &amp;nbsp; R_O &amp;lt;= 0;&amp;nbsp; &amp;nbsp; left &amp;lt;= 0;&amp;nbsp; &amp;nbsp; mid &amp;lt;= 0;&amp;nbsp; &amp;nbsp; right &amp;lt;= 0;&lt;br&gt;&amp;nbsp; &amp;nbsp; for(i = 0; i &amp;lt; max_size; i = i + 1)begin&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; arr[i] &amp;lt;= 0;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; result[i] &amp;lt;= 0;&amp;nbsp; &amp;nbsp; end" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="98.75" y="130" width="282.5" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJKlyDsI21KkTeVdRT-c-5" target="KJKlyDsI21KkTeVdRT-c-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-8" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KJKlyDsI21KkTeVdRT-c-7">
+          <mxGeometry x="-0.4889" relative="1" as="geometry">
+            <mxPoint x="10" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-5" value="R_I" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-6" value="&lt;div&gt;arr[counter] &amp;lt;= dataIn;&lt;br&gt;&lt;/div&gt;&lt;div&gt;counter &amp;lt;= counter + 1;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="153.75" y="400" width="172.5" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
