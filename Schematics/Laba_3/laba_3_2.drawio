@@ -10,8 +10,8 @@
         <mxCell id="KJKlyDsI21KkTeVdRT-c-1" value="Начало" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="190" y="40" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="KJKlyDsI21KkTeVdRT-c-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="130" width="120" height="60" as="geometry" />
+        <mxCell id="KJKlyDsI21KkTeVdRT-c-2" value="&amp;nbsp; &amp;nbsp; loop_flag &amp;lt;= 0;&amp;nbsp; &amp;nbsp; &amp;nbsp;state &amp;lt;= S0;&lt;br&gt;&amp;nbsp; &amp;nbsp; it1 &amp;lt;= 0;&amp;nbsp; &amp;nbsp; it2 &amp;lt;= 0;&lt;br&gt;&amp;nbsp; &amp;nbsp; counter &amp;lt;= 0;&amp;nbsp; &amp;nbsp; packed &amp;lt;= 0;&lt;br&gt;&amp;nbsp; &amp;nbsp; R_O &amp;lt;= 0;&amp;nbsp; &amp;nbsp; left &amp;lt;= 0;&amp;nbsp; &amp;nbsp; mid &amp;lt;= 0;&amp;nbsp; &amp;nbsp; right &amp;lt;= 0;&lt;br&gt;&amp;nbsp; &amp;nbsp; for(i = 0; i &amp;lt; max_size; i = i + 1)begin&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; arr[i] &amp;lt;= 0;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; result[i] &amp;lt;= 0;&amp;nbsp; &amp;nbsp; end" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="98.75" y="130" width="282.5" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
