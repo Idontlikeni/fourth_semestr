@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.3">
   <diagram name="Страница — 1" id="jsUq0gen0O-brnGz4zO4">
-    <mxGraphModel dx="1209" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1209" dy="1737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -53,6 +53,20 @@
           <mxGeometry x="0.1721" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="J9xxEOC6JsALD-byRLUU-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J9xxEOC6JsALD-byRLUU-1" target="PY19tu6KOM3bZWnWFCzy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J9xxEOC6JsALD-byRLUU-4" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="J9xxEOC6JsALD-byRLUU-3">
+          <mxGeometry x="0.2429" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J9xxEOC6JsALD-byRLUU-1" value="&amp;lt;&amp;lt;Device&amp;gt;&amp;gt;:&lt;div&gt;ЭБУ автомобиля&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="352.5" y="-90" width="245" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="J9xxEOC6JsALD-byRLUU-2" value="&amp;lt;&amp;lt;Execution environment&amp;gt;&amp;gt;:&lt;div&gt;Прошивка ЭБУ&lt;/div&gt;&lt;div&gt;server.h&lt;br&gt;serber.cpp&lt;/div&gt;&lt;div&gt;logic.h&lt;/div&gt;&lt;div&gt;loigic.cpp&lt;/div&gt;" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="360" y="-40" width="220" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
