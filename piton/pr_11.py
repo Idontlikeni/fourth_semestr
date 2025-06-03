@@ -92,6 +92,7 @@ class MooreMachine:
 
     def __getattr__(self, name):
         raise MachineException("unknown")
+        return lambda: "unknown"
 
 
 def main():
