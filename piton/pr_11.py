@@ -98,7 +98,6 @@ class MooreMachine:
 def main():
     return MooreMachine()
 
-
 def test():
     obj = main()
     assert obj.get_output() == 'F1'

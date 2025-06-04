@@ -3,9 +3,6 @@ class MealyError(Exception):
         self.msg = msg
         super().__init__(self.msg)
 
-    # def __str__(self):
-    #     return f"{self.msg} Error code"
-
 
 class MealyMachine:
     def __init__(self):
@@ -34,7 +31,7 @@ class MealyMachine:
                 return "T1"
             case _:
                 self.steps -= 1
-                MealyError("unsupported")
+                raise MealyError("unsupported")
 
     def rev(self):
         self.steps += 1
@@ -55,8 +52,8 @@ class MealyMachine:
                 self.tree["B1"]["B2"] += 1
                 return "T3"
             case "B3":
-                self.state = "B1"
-                self.tree["B3"]["B1"] += 1
+                self.state = "B0"
+                self.tree["B3"]["B0"] += 1
                 return "T1"
             case _:
                 self.steps -= 1
@@ -72,7 +69,7 @@ class MealyMachine:
             case _:
                 self.steps -= 1
                 raise MealyError("unsupported")
-    
+
     def snap(self):
         self.steps += 1
         match self.state:
@@ -83,7 +80,7 @@ class MealyMachine:
             case _:
                 self.steps -= 1
                 raise MealyError("unsupported")
-    
+
     def erase(self):
         self.steps += 1
         match self.state:
@@ -121,29 +118,30 @@ def main():
 
 def test():
     obj = main()
-    assert obj.drag() == 'T2'
-    assert obj.has_max_in_edges() == True
-    assert obj.add() == 'T3'
-    assert obj.has_max_in_edges() == False
-    
-    assert obj.rev() == 'T3'
-    assert obj.erase() == 'T1'
-    assert obj.stand() == 'T1'
-    assert obj.add() == 'T3'
-    assert obj.erase() == 'T1'
+    assert obj.drag() == 'T2'  # B1
+    assert obj.has_max_in_edges()
+    assert obj.add() == 'T3'  # B2
+    assert not obj.has_max_in_edges()
+    assert obj.stand() == 'T1'  # B1
+    assert obj.add() == 'T3'  # B2
+    assert obj.snap() == 'T2'  # B3
+    assert obj.drag() == 'T1'  # B1
+    assert obj.add() == 'T3'  # B2
+    assert obj.snap() == 'T2'  # B3
+    assert obj.add() == 'T1'  # B0
+    assert obj.rev() == 'T3'  # B5
+    assert obj.erase() == 'T1'  # B2
+    assert obj.erase() == 'T1'  # B4
     assert obj.seen_edge("B4", "B1") == 1
-    assert obj.get_step() == 8
-    assert obj.drag() == 'T2'
-    assert obj.add() == 'T3'
-    assert obj.snap() == 'T2'
-
-    # try:
-    #     obj.add()
-    # except MealyError as e:
-    #     assert e.msg == "unsupported"
+    assert obj.get_step() == 12
 
     try:
         obj.rev()
+    except MealyError as e:
+        assert e.msg == "unsupported"
+
+    try:
+        obj.add()
     except MealyError as e:
         assert e.msg == "unsupported"
 
@@ -166,3 +164,10 @@ def test():
         obj.keks()
     except MealyError as e:
         assert e.msg == "unknown"
+
+    assert obj.drag() == "T2"
+
+    try:
+        obj.drag()
+    except MealyError as e:
+        assert e.msg == "unsupported"
