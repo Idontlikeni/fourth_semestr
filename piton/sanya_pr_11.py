@@ -7,10 +7,10 @@ class MachineError(Exception):
 class MealyMachine:
     def __init__(self):
         self.state = "D7"
-        self.mt = set()
+        self.mt = dict()
         self.steps = 0
         self.vs = {}
-        self.mt = set()
+
         self.tree = {
             "D7": {"D5": 0},
             "D5": {"D6": 0, "D4": 0},
@@ -31,9 +31,9 @@ class MealyMachine:
     def get(self):
         self.steps += 1
 
-        match self.state:
-            case "D7" | "D5":
-                self.mt.add('get')
+        # match self.state:
+        #     case "D7" | "D5":
+        #         self.mt.add('get')
 
         match self.state:
             case "D7":
@@ -55,9 +55,9 @@ class MealyMachine:
     def crack(self):
         self.steps += 1
 
-        match self.state:
-            case "D6" | "D2" | "D3":
-                self.mt.add("crack")
+        # match self.state:
+        #     case "D6" | "D2" | "D3":
+        #         self.mt.add("crack")
 
         match self.state:
             case "D6":
@@ -79,9 +79,9 @@ class MealyMachine:
     def paint(self):
         self.steps += 1
 
-        match self.state:
-            case "D4":
-                self.mt.add("paint")
+        # match self.state:
+        #     case "D4":
+        #         self.mt.add("paint")
 
         match self.state:
             case "D4" if self.vs['e'] == 1:
@@ -99,9 +99,9 @@ class MealyMachine:
     def chain(self):
         self.steps += 1
 
-        match self.state:
-            case "D1" | "D3":
-                self.mt.add("chain")
+        # match self.state:
+        #     case "D1" | "D3":
+        #         self.mt.add("chain")
 
         match self.state:
             case "D1":
@@ -119,9 +119,9 @@ class MealyMachine:
     def scale(self):
         self.steps += 1
 
-        match self.state:
-            case "D2" | "D0":
-                self.mt.add("scale")
+        # match self.state:
+        #     case "D2" | "D0":
+        #         self.mt.add("scale")
 
         match self.state:
             case "D2":
@@ -137,7 +137,7 @@ class MealyMachine:
                 raise MachineError("unsupported")
 
     def seen_method(self, name):
-        return name in self.mt
+        return self.mt.get(name, 0)
 
     def seen_edge(self, e1, e2):
         return self.tree[e1][e2]
@@ -148,23 +148,19 @@ class MealyMachine:
         else:
             return False
 
+    def move(self, m):
+        method = getattr(self, m)
+        try:
+            self.mt[m] = self.mt.get(m, 0) + 1
+            temp = method()
+        except MachineError as e:
+            self.mt[m] -= 1
+            raise e
+
+        return temp
+
     def __getattr__(self, name):
         raise MachineError("unknown")
-
-    def move(self, m):
-        match m:
-            case 'get':
-                return self.get()
-            case 'crack':
-                return self.crack()
-            case 'paint':
-                return self.paint()
-            case 'chain':
-                return self.chain()
-            case 'scale':
-                return self.scale()
-            case _:
-                raise MachineError("unknown")
 
 
 def main():
@@ -223,11 +219,6 @@ def test():
         obj.move('scale')
     except MachineError as e:
         assert e.msg == "unsupported"
-
-    try:
-        obj.keks()
-    except MachineError as e:
-        assert e.msg == "unknown"
 
     try:
         obj.move('keks')

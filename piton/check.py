@@ -5,10 +5,10 @@ def trace(x, y):
         yield call.translate(tr)
 
 # Получено:
-y = [None, ('exception', 'MachineException', 'unkown'), '<<< Ошибка!']
+y = [None, None, 0, ('exception', 'MachineError', 'unsupported'), False, 'J4', 0, 'J1', False, 0, ('exception', 'MachineError', 'unsupported'), 'J3', 'J2', None, 'J1', ('exception', 'MachineError', 'unknown'), 'J5', 1, ('exception', 'MachineError', 'unknown'), False, ('exception', 'MachineError', 'unknown'), 'J2', 2, 'J3', ('exception', 'MachineError', 'unknown'), 'J4', 1, None, ('exception', 'MachineError', 'unknown'), 3, '<<< Ошибка!']
 
 # Входные данные: 
-x = (('let_y', 1), ('build',), ('has_path_to', 'v5'), ('chain',), ('let_r', 1), ('has_path_to', 'v0'), ('boost',), ('get_output',), ('boost',), ('let_y', 0), ('seen_method', 'boost'), ('get_output',), ('init',), ('get_output',), ('has_path_to', 'v5'), ('boost',), ('get_output',), ('sit',), ('patch',), ('patch',), ('get_output',), ('cut',), ('tag',), ('get_output',), ('tag',), ('has_path_to', 'v1'), ('erase',), ('init',), ('seen_method', 'init'), ('get_output',), ('chain',), ('patch',), ('has_path_to', 'v1'), ('seen_method', 'boost'), ('get_output',), ('seen_method', 'patch'), ('boost',), ('get_output',), ('init',), ('get_output',))
+x = (('e', 0), ('z', 0), ('seen_edge', 'D4', 'D2'), ('move', 'crack'), ('has_max_in_edges',), ('move', 'get'), ('seen_edge', 'D5', 'D4'), ('move', 'get'), ('has_max_in_edges',), ('seen_edge', 'D3', 'D0'), ('move', 'paint'), ('move', 'crack'), ('move', 'paint'), ('e', 1), ('move', 'crack'), ('move', 'hurry'), ('move', 'chain'), ('seen_method', 'chain'), ('move', 'shade'), ('has_max_in_edges',), ('move', 'hurry'), ('move', 'chain'), ('seen_method', 'get'), ('move', 'scale'), ('move', 'debug'), ('move', 'paint'), ('seen_edge', 'D3', 'D0'), ('e', 0), ('move', 'shade'), ('seen_method', 'paint'), ('move', 'paint'), ('move', 'model'))
 
 
 # Генерация трассы:
