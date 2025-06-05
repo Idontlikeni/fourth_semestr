@@ -21,135 +21,62 @@ module testbench2;
         .button_reset_en(button_reset_en)
     );
     always #5 clk = ~clk;
+    task button_press;
+    begin
+        repeat($urandom_range(50,0))
+        begin
+            button = $random;
+            #3;
+        end
+        button = 1;
+        #1000;
+        
+        repeat($urandom_range(50,0))
+        begin
+            button = $random;
+            #3;
+        end
+        button = 0;
+        #8000;
+    end 
+    endtask
     
-//    clk <= 0;
-//    reset <= 1;
-//    R_I <= 0;
-//    dataIn <= 0;
-    
-//    #30;    
-//    reset <= 0;
-//    dataIn <= 4'b0101;
-//    R_I <= 1;
-//    #30; dataIn <= 4'b0111; 
-//    #20; dataIn <= 4'b0011; 
-//    #20; dataIn <= 4'b0110; 
-//    #20; dataIn <= 4'b0001; 
-//    #20; dataIn <= 4'b0010; 
-//    #100;
-//    reset <= 1;
-//    R_I <= 0;
+    task button_reset_press;
+    begin
+        repeat($urandom_range(50,0))
+        begin
+            button_reset = $random;
+            #3;
+        end
+        button_reset = 1;
+        #1000;
+        
+        repeat($urandom_range(50,0))
+        begin
+            button_reset = $random;
+            #3;
+        end
+        button_reset = 0;
+        #8000;
+    end 
+    endtask
     
     initial
     begin
         #4000
         $srandom(35000);
         
-        SWITCHES = 4'b0100;
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 1;
-        #1000;
+        SWITCHES = 4'd9;
+        button_press;
         
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 0;
-        #8000;
+        SWITCHES = 4'd7;
+        button_press;
         
+        SWITCHES = 4'd3;
+        button_press;
         
-        SWITCHES = 4'b0111;
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 1;
-        #1000;
+        SWITCHES = 4'd1;
+        button_press;
         
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 0;
-        #8000;
-        
-        
-        SWITCHES = 4'b0011;
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 1;
-        #1000;
-        
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 0;
-        #8000;
-        
-        
-        SWITCHES = 4'b0001;
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 1;
-        #1000;
-        
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 0;
-        #8000;
-        
-        
-        SWITCHES = 4'b0110;
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 1;
-        #1000;
-        
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 0;
-        #8000;
-        
-        
-        SWITCHES = 4'b0101;
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 1;
-        #1000;
-        
-        repeat($urandom_range(50,0))
-        begin
-            button = $random;
-            #3;
-        end
-        button = 0;
-        #8000;
     end
 endmodule

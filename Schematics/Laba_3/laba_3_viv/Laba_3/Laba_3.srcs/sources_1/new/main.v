@@ -9,9 +9,7 @@ module main(
     output wire button_reset_en,
     output reg error_output
 );
-//    wire button_signal, button_signal_en, reset_signal_en, reset_signal;
-//    reg error_output;
-//    reg [31:0] NUMBER;
+
     reg[7:0] AN_MASK = 8'b11111111;
     reg [3:0] dataIn;
     wire [15:0] dataOut;
@@ -103,11 +101,9 @@ module main(
                     NUMBER <= 0;
                     NUMBER <= dataOut;
                     AN_MASK <= 8'b11111111;
-                    //for(i = 0; i < n; i = i + 1)
                     AN_MASK = AN_MASK << n;
                 end
                 R_I <= 0;
             end
     end
-    
 endmodule
