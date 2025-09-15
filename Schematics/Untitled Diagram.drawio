@@ -740,16 +740,16 @@
             <mxPoint x="1519.66" y="-10" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QIiolCflaB-S5kT5Gkdr-9" value="&lt;div&gt;ША &amp;lt;= R1&lt;/div&gt;&lt;div&gt;РАрон &amp;lt;= ША&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="QIiolCflaB-S5kT5Gkdr-9" value="&lt;div&gt;ША &amp;lt;= A2&lt;/div&gt;&lt;div&gt;РАозу &amp;lt;= ША&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1459.9950000000001" y="30" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIiolCflaB-S5kT5Gkdr-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QIiolCflaB-S5kT5Gkdr-11" target="QIiolCflaB-S5kT5Gkdr-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QIiolCflaB-S5kT5Gkdr-11" value="чтение РОН" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="QIiolCflaB-S5kT5Gkdr-11" value="чтение ОЗУ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1478.66" y="90" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QIiolCflaB-S5kT5Gkdr-12" value="&lt;div&gt;ШД &amp;lt;= РСрон&lt;/div&gt;&lt;div&gt;Р1алу &amp;lt;= ШД&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QIiolCflaB-S5kT5Gkdr-12" value="&lt;div&gt;ШД &amp;lt;= РСозу&lt;/div&gt;&lt;div&gt;Р2алу &amp;lt;= ШД&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1458.66" y="160" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
