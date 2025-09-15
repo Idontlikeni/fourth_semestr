@@ -301,21 +301,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VAsp2LrHcUiWLGwf6JHy-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="87p6amoQ7XiuBhZTHv8e-20">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="570" y="200" as="sourcePoint" />
-            <mxPoint x="660" y="50" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VAsp2LrHcUiWLGwf6JHy-43" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="87p6amoQ7XiuBhZTHv8e-21">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="570" y="200" as="sourcePoint" />
-            <mxPoint x="660" y="50" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VAsp2LrHcUiWLGwf6JHy-45" value="{x}" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="640" y="30" width="60" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="VAsp2LrHcUiWLGwf6JHy-46" value="ША &amp;lt;= R1&lt;div&gt;РАозу &amp;lt;= ША&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1215" y="-210" width="120" height="60" as="geometry" />
         </mxCell>
@@ -327,6 +312,17 @@
         </mxCell>
         <mxCell id="VAsp2LrHcUiWLGwf6JHy-48" value="ШД &amp;lt;=&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1215" y="-70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAsp2LrHcUiWLGwf6JHy-50" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="40" as="sourcePoint" />
+            <mxPoint x="600" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VAsp2LrHcUiWLGwf6JHy-51" value="x" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VAsp2LrHcUiWLGwf6JHy-50">
+          <mxGeometry x="0.3403" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
