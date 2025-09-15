@@ -49,7 +49,7 @@
         <mxCell id="87p6amoQ7XiuBhZTHv8e-16" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-20" y="220" as="sourcePoint" />
-            <mxPoint x="931" y="220" as="targetPoint" />
+            <mxPoint x="660" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VAsp2LrHcUiWLGwf6JHy-3" value="ША" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="87p6amoQ7XiuBhZTHv8e-16">
@@ -60,7 +60,7 @@
         <mxCell id="87p6amoQ7XiuBhZTHv8e-17" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-17" y="-120" as="sourcePoint" />
-            <mxPoint x="934" y="-120" as="targetPoint" />
+            <mxPoint x="660" y="-120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VAsp2LrHcUiWLGwf6JHy-2" value="ШД" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="87p6amoQ7XiuBhZTHv8e-17">
