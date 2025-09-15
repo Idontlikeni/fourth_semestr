@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0" version="28.2.0">
   <diagram name="Page-1" id="4vjaePxt8hJmB_1m73Hc">
-    <mxGraphModel dx="1875" dy="1536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1929" dy="1559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -321,11 +321,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VAsp2LrHcUiWLGwf6JHy-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="VAsp2LrHcUiWLGwf6JHy-52" target="VAsp2LrHcUiWLGwf6JHy-46" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="VAsp2LrHcUiWLGwf6JHy-52" value="Начало" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1215" y="-280" width="120" height="40" as="geometry" />
+        <mxCell id="VAsp2LrHcUiWLGwf6JHy-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="VAsp2LrHcUiWLGwf6JHy-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1275.0000000000005" y="-240" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="VAsp2LrHcUiWLGwf6JHy-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VAsp2LrHcUiWLGwf6JHy-54" target="VAsp2LrHcUiWLGwf6JHy-136" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -714,6 +713,9 @@
         </mxCell>
         <mxCell id="VAsp2LrHcUiWLGwf6JHy-148" value="A" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1254.67" y="270" width="42.67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QIiolCflaB-S5kT5Gkdr-1" value="Начало" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1216" y="-280" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
