@@ -680,6 +680,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="VAsp2LrHcUiWLGwf6JHy-133" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VAsp2LrHcUiWLGwf6JHy-81">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="940" as="sourcePoint" />
+            <mxPoint x="710" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
