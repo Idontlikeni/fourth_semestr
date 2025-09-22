@@ -1154,6 +1154,15 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="EawJJbU1DG_IDFBdasAX-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EawJJbU1DG_IDFBdasAX-98" target="EawJJbU1DG_IDFBdasAX-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EawJJbU1DG_IDFBdasAX-98" value="АО" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1635" y="1110" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EawJJbU1DG_IDFBdasAX-99" value="АО" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1637.5" y="1165" width="80" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
