@@ -1184,6 +1184,9 @@
         <mxCell id="EawJJbU1DG_IDFBdasAX-106" value="Запись" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1850" y="800" width="90" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="EawJJbU1DG_IDFBdasAX-111" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EawJJbU1DG_IDFBdasAX-107" target="EawJJbU1DG_IDFBdasAX-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="EawJJbU1DG_IDFBdasAX-107" value="ОЗУ" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1855" y="885" width="80" height="80" as="geometry" />
         </mxCell>
@@ -1196,6 +1199,9 @@
               <mxPoint x="2000" y="850" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="EawJJbU1DG_IDFBdasAX-110" value="Конец" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1842.5" y="1021.63" width="105" height="35" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
