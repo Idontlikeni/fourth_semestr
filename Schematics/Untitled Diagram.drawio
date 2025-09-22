@@ -768,7 +768,17 @@
           <mxGeometry x="1250" y="-130" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WaRCo6NdUlWpvyEPkudx-5" value="АО" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="-60" width="80" height="80" as="geometry" />
+          <mxGeometry x="1230" y="-40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WaRCo6NdUlWpvyEPkudx-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WaRCo6NdUlWpvyEPkudx-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="140" as="sourcePoint" />
+            <mxPoint x="1270" y="-70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1340" />
+              <mxPoint x="1340" y="-70" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
