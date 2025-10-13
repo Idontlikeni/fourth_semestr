@@ -1253,7 +1253,7 @@
         <mxCell id="A7re3Xvq1UFNqnIXCzaf-14" value="&lt;div&gt;АР.ОП&lt;/div&gt;&lt;div&gt;(Р1 + Р2)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="871.34" y="1885" width="78" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="A7re3Xvq1UFNqnIXCzaf-15" value="&lt;div&gt;Р1 &amp;lt;= SM&lt;/div&gt;&lt;div&gt;ША &amp;lt;= Р1&lt;/div&gt;&lt;div&gt;РАозу &amp;lt;= ША&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="A7re3Xvq1UFNqnIXCzaf-15" value="&lt;div&gt;РР &amp;lt;= SM&lt;/div&gt;&lt;div&gt;ША &amp;lt;= РР&lt;/div&gt;&lt;div&gt;РАозу &amp;lt;= ША&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="850" y="1935" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A7re3Xvq1UFNqnIXCzaf-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A7re3Xvq1UFNqnIXCzaf-17" target="A7re3Xvq1UFNqnIXCzaf-18" edge="1">
@@ -1662,7 +1662,7 @@
         <mxCell id="c5uDc1rHRd3VpsCmCCSu-2" value="SM" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;size=0.23;arcSize=10;flipV=1;labelPosition=center;align=center;rotation=0;" vertex="1" parent="1">
           <mxGeometry x="540" y="1480" width="110" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="c5uDc1rHRd3VpsCmCCSu-5" value="Р1" style="whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+        <mxCell id="c5uDc1rHRd3VpsCmCCSu-5" value="РР" style="whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
           <mxGeometry x="572.5" y="1580" width="45" height="17.5" as="geometry" />
         </mxCell>
         <mxCell id="c5uDc1rHRd3VpsCmCCSu-8" value="УС" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
