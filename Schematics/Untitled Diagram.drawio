@@ -1212,7 +1212,7 @@
         <mxCell id="A7re3Xvq1UFNqnIXCzaf-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A7re3Xvq1UFNqnIXCzaf-3" target="A7re3Xvq1UFNqnIXCzaf-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A7re3Xvq1UFNqnIXCzaf-3" value="&lt;div&gt;ШД &amp;lt;= Д2&lt;/div&gt;&lt;div&gt;ШД &amp;lt;= Р2сум&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="A7re3Xvq1UFNqnIXCzaf-3" value="&lt;div&gt;ШД &amp;lt;= Д1&lt;/div&gt;&lt;div&gt;ШД &amp;lt;= Р2сум&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="850" y="1405" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A7re3Xvq1UFNqnIXCzaf-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A7re3Xvq1UFNqnIXCzaf-5" target="A7re3Xvq1UFNqnIXCzaf-7" edge="1">
@@ -1244,7 +1244,7 @@
         <mxCell id="A7re3Xvq1UFNqnIXCzaf-10" value="&lt;div&gt;ШД &amp;lt;= РСрон&lt;/div&gt;&lt;div&gt;Р1сум &amp;lt;= ШД&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="850.34" y="1725" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="A7re3Xvq1UFNqnIXCzaf-12" value="&lt;div&gt;ШД &amp;lt;= Д2&lt;/div&gt;&lt;div&gt;Р2сум &amp;lt;= ШД&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="A7re3Xvq1UFNqnIXCzaf-12" value="&lt;div&gt;ШД &amp;lt;= Д1&lt;/div&gt;&lt;div&gt;Р2сум &amp;lt;= ШД&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="850.34" y="1825" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A7re3Xvq1UFNqnIXCzaf-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="A7re3Xvq1UFNqnIXCzaf-14" target="A7re3Xvq1UFNqnIXCzaf-15" edge="1">
